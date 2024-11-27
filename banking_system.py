@@ -2,9 +2,8 @@ account = {'John': {'balance': 1000},
             'Jane': {'balance': 500}}
 # Function to deposit money into an account
 def deposit(account: dict, amount: float) -> None:
-    for x in account:
-        account[x]["balance"] += amount
-        return account[x]["balance"]
+    account['balance'] += amount
+    return account['balance']
 
 # Function to withdraw money from an account
 def withdraw(account: dict, amount: float) -> None:
